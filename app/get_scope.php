@@ -26,7 +26,8 @@ header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
 
 if (isset($_GET['scope'])) {
-  $scope = mysqli_real_escape_string($db, $_GET['scope']);
+  // $scope = mysqli_real_escape_string($db, $_GET['scope']);
+  $scope = '92_valleesud';
 } else {
   jsonError('GET_SCOPE', 'Scope is not defined');
   return;

@@ -56,7 +56,8 @@ if(strlen($time) == 14) {
 
 $explanation = (isset($_POST['explanation']) ? removeEmoji(mysqli_real_escape_string($db, $_POST['explanation'])) : '');
 $version = (isset($_POST['version']) ? mysqli_real_escape_string($db, $_POST['version']) : 0);
-$scope = (isset($_POST['scope']) ? mysqli_real_escape_string($db, $_POST['scope']) : 0);
+// $scope = (isset($_POST['scope']) ? mysqli_real_escape_string($db, $_POST['scope']) : 0);
+$scope = '92_valleesud';
 $status = 0;
 
 # Check scope compliancy

@@ -340,7 +340,8 @@ if (!debug_backtrace()) {
   }
 
   if (isset($_GET['scope'])) {
-    $export->setScope($_GET['scope']);
+    $export->setScope('92_valleesud');
+    // $export->setScope($_GET['scope']);
   }
 
   if (isset($_GET['count'])) {
